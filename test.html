@@ -1,0 +1,160 @@
+<!DOCTYPE html> <!-- Tells the browser this file is modern HTML5 -->
+<html lang="en"> <!-- Root element; lang="en" says the page is in English -->
+<head> <!-- Holds information ABOUT the page (not shown on screen) -->
+  <meta charset="UTF-8"> <!-- Lets the page show all letters and symbols correctly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"> <!-- Makes the page fit phone screens -->
+  <title>Whit Cooks</title> <!-- Text shown on the browser tab -->
+  <link rel="stylesheet" href="style.css"> <!-- Connects the CSS file (the design) -->
+</head> <!-- End of head -->
+<body> <!-- Everything inside body is visible on the page -->
+  <header> <!-- Top bar of the website -->
+    <h1>🍳 Whit Cooks</h1> <!-- Main website name -->
+    <nav> <!-- Navigation: the two menu buttons -->
+      <button class="nav-btn active" data-page="home">Home</button> <!-- data-page tells JavaScript which section to open -->
+      <button class="nav-btn" data-page="ingredients">Ingredients</button> <!-- Opens the ingredients page -->
+    </nav> <!-- End of navigation -->
+  </header> <!-- End of header -->
+
+  <main> <!-- The main content area -->
+    <section id="home" class="page active"> <!-- PAGE 1: Home (visible first because of "active") -->
+      <div class="card"> <!-- A white box to hold text -->
+        <h2>Welcome to Whit Cooks</h2> <!-- Heading -->
+        <p>Cooking is easier when you know exactly what to buy and what to do next.</p> <!-- Short welcome -->
+      </div>
+      <div class="card"> <!-- Box 2 -->
+        <h2>Why this website was made</h2> <!-- Heading -->
+        <p>Many people want to cook a meal but do not know the ingredients or the steps. Whit Cooks was made to give you both in seconds, so you can cook with confidence.</p> <!-- Purpose -->
+      </div>
+      <div class="card"> <!-- Box 3 -->
+        <h2>About us</h2> <!-- Heading -->
+        <p>We are a small team that loves food. We share simple recipes from Kenya and around the world, written in clear and easy words.</p> <!-- Edit this to your real story -->
+      </div>
+      <button id="goBtn" class="primary">Find ingredients →</button> <!-- Big button that takes the visitor to the ingredients page -->
+    </section> <!-- End of home page -->
+
+    <section id="ingredients" class="page"> <!-- PAGE 2: Ingredients (hidden until opened) -->
+      <div class="card"> <!-- Box for the search -->
+        <h2>Ingredient Finder</h2> <!-- Heading -->
+        <form id="searchForm"> <!-- A form lets the Enter key also search -->
+          <input id="foodInput" type="text" placeholder="Type a food, e.g. pilau" list="foodList" autocomplete="off" required> <!-- Where the visitor types; required = cannot be empty -->
+          <datalist id="foodList"></datalist> <!-- Suggestion list, filled by JavaScript -->
+          <button type="submit" class="primary">Search</button> <!-- Search button -->
+        </form> <!-- End of form -->
+      </div>
+      <div id="result"></div> <!-- Empty space where JavaScript shows the answer -->
+    </section> <!-- End of ingredients page -->
+  </main> <!-- End of main -->
+
+  <footer>© Whit Cooks. Happy cooking!</footer> <!-- Bottom of the page -->
+  <script src="script.js"></script> <!-- Connects the JavaScript file (the brain); placed last so the page loads first -->
+</body> <!-- End of body -->
+</html> <!-- End of the HTML file -->
+ :root { /* :root holds colours we can reuse everywhere */
+  --bg: #fff8f0; /* page background */
+  --card: #ffffff; /* box background */
+  --text: #2b2118; /* main text colour */
+  --accent: #c2410c; /* orange used for buttons and header */
+  --on-accent: #ffffff; /* text colour placed on top of orange */
+  --muted: #6f5f52; /* softer text colour */
+  box-sizing: border-box; /* padding is counted inside widths */
+  padding-top: env(safe-area-inset-top, 0px); /* keeps content clear of the phone notch */
+  padding-bottom: env(safe-area-inset-bottom, 0px); /* keeps content clear of the phone bottom bar */
+}
+@media (prefers-color-scheme: dark) { /* Applies only if the visitor uses dark mode */
+  :root { --bg: #1c1511; --card: #2a2019; --text: #f5ebe0; --accent: #ff8c42; --on-accent: #1c1511; --muted: #b8a898; } /* dark versions of the colours */
+}
+* { box-sizing: border-box; } /* every element counts padding inside its width */
+body { margin: 0; font-family: Georgia, "Times New Roman", serif; background: var(--bg); color: var(--text); line-height: 1.6; } /* page font, colours, line spacing */
+header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; padding: 1rem 1.5rem; background: var(--accent); color: var(--on-accent); } /* orange bar: logo left, menu right, wraps on small screens */
+h1 { margin: 0; font-size: 1.6rem; } /* website name size */
+.nav-btn { background: transparent; color: var(--on-accent); border: 2px solid var(--on-accent); border-radius: 20px; padding: 0.4rem 1rem; margin-left: 0.4rem; cursor: pointer; font: inherit; } /* outlined menu buttons */
+.nav-btn.active { background: var(--on-accent); color: var(--accent); } /* the open page's button is filled */
+main { max-width: 800px; margin: 1.5rem auto; padding: 0 1rem; } /* centres content, limits width */
+.page { display: none; } /* hide every page by default */
+.page.active { display: block; } /* show only the active page */
+.card { background: var(--card); padding: 1.2rem 1.5rem; border-radius: 12px; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.12); } /* white rounded boxes with a soft shadow */
+h2 { margin-top: 0; color: var(--accent); } /* headings in orange */
+.primary { background: var(--accent); color: var(--on-accent); border: none; border-radius: 8px; padding: 0.7rem 1.4rem; font: inherit; font-weight: bold; cursor: pointer; } /* main action buttons */
+.primary:hover { opacity: 0.85; } /* slightly fade when the mouse is over it */
+form { display: flex; gap: 0.5rem; flex-wrap: wrap; } /* input and button sit side by side */
+input { flex: 1; min-width: 200px; padding: 0.7rem; font: inherit; border: 2px solid var(--accent); border-radius: 8px; background: var(--card); color: var(--text); } /* the search box */
+.dish-title { font-size: 1.4rem; } /* recipe name size */
+li { margin-bottom: 0.4rem; } /* space between list items */
+.muted { color: var(--muted); } /* soft text for hints */
+footer { text-align: center; padding: 1.5rem; color: var(--muted); } /* bottom text */
+const recipes = { // Our recipe "database": each food has an emoji, ingredients and steps
+  pilau: { emoji: "🍚", ingredients: ["2 cups rice", "500g beef or chicken", "2 onions", "2 tbsp pilau masala", "4 cloves garlic", "Oil and salt"], steps: ["Fry sliced onions in oil until dark brown.", "Add garlic and the meat; brown it for 5 minutes.", "Stir in pilau masala and a little salt.", "Add water and cook until the meat is tender.", "Add washed rice and enough water to cover it.", "Cover and cook on low heat until the rice is soft."] },
+  chapati: { emoji: "🫓", ingredients: ["3 cups flour", "1 cup warm water", "3 tbsp oil", "1 tsp salt", "Extra oil for frying"], steps: ["Mix flour and salt in a bowl.", "Add oil and warm water slowly to make a soft dough.", "Knead for 10 minutes, then rest for 30 minutes.", "Divide into balls and roll each one thin.", "Brush with oil, roll up, and roll flat again.", "Cook on a hot pan, flipping until golden on both sides."] },
+  ugali: { emoji: "🍲", ingredients: ["2 cups maize flour", "3 cups water", "A pinch of salt"], steps: ["Boil the water with salt in a pot.", "Add a little flour and stir to make a thin paste.", "Pour in the rest of the flour slowly while stirring.", "Press and turn the mixture with a wooden spoon until thick.", "Cover and cook on low heat for 5 minutes, then serve hot."] },
+  rice: { emoji: "🍚", ingredients: ["2 cups rice", "4 cups water", "1 tsp salt", "1 tbsp oil"], steps: ["Wash the rice until the water runs clear.", "Bring water, salt and oil to a boil.", "Add the rice and stir once.", "Cover and cook on low heat for 15 minutes.", "Switch off, rest 5 minutes, then fluff with a fork."] },
+  pasta: { emoji: "🍝", ingredients: ["250g pasta", "3 tomatoes", "1 onion", "2 cloves garlic", "2 tbsp oil", "Salt and pepper"], steps: ["Boil pasta in salted water for 10 minutes, then drain.", "Fry onion and garlic in oil until soft.", "Add chopped tomatoes and cook into a sauce.", "Season with salt and pepper.", "Mix the pasta into the sauce and serve."] },
+  chicken: { emoji: "🍗", ingredients: ["1 whole chicken, cut up", "2 onions", "3 tomatoes", "3 cloves garlic", "Oil, salt and curry powder"], steps: ["Season the chicken with salt and curry powder.", "Fry the pieces until golden, then set aside.", "Fry onions and garlic, then add tomatoes.", "Return the chicken and add half a cup of water.", "Cover and simmer for 30 minutes until tender."] },
+  beef: { emoji: "🥩", ingredients: ["500g beef", "2 onions", "3 tomatoes", "2 cloves garlic", "Oil and salt"], steps: ["Boil the beef with salt until nearly tender.", "Fry onions and garlic in oil until golden.", "Add tomatoes and cook into a thick sauce.", "Add the beef and a little of its broth.", "Simmer for 15 minutes and serve."] },
+  fish: { emoji: "🐟", ingredients: ["2 whole fish, cleaned", "1 lemon", "3 cloves garlic", "1 tsp salt", "Oil for frying"], steps: ["Rub the fish with salt, garlic and lemon juice.", "Rest it for 15 minutes.", "Heat oil in a pan until hot.", "Fry the fish 5 to 7 minutes on each side until crisp.", "Serve with lemon wedges."] },
+  pork: { emoji: "🥓", ingredients: ["500g pork", "2 onions", "3 cloves garlic", "1 tbsp soy sauce", "Oil and salt"], steps: ["Cut the pork into small pieces and season with salt.", "Boil it for 20 minutes, then drain.", "Fry the pork in oil until brown.", "Add onions, garlic and soy sauce.", "Cook for 10 more minutes and serve."] },
+  fries: { emoji: "🍟", ingredients: ["4 large potatoes", "Oil for frying", "Salt"], steps: ["Peel the potatoes and cut them into sticks.", "Rinse and dry them well.", "Heat oil until hot.", "Fry for 6 to 8 minutes until golden.", "Drain, sprinkle with salt and serve."] }
+}; // End of the recipes object
+
+const pages = document.querySelectorAll(".page"); // Grab both page sections
+const navButtons = document.querySelectorAll(".nav-btn"); // Grab both menu buttons
+const resultBox = document.getElementById("result"); // The empty box where answers appear
+const foodList = document.getElementById("foodList"); // The suggestion list under the input
+
+function showPage(name) { // Function that opens one page and hides the other
+  pages.forEach(function (p) { p.classList.toggle("active", p.id === name); }); // Only the matching page gets "active"
+  navButtons.forEach(function (b) { b.classList.toggle("active", b.dataset.page === name); }); // Highlight the matching menu button
+  window.scrollTo(0, 0); // Jump back to the top of the page
+} // End of showPage
+
+navButtons.forEach(function (b) { b.addEventListener("click", function () { showPage(b.dataset.page); }); }); // Menu buttons open their pages when clicked
+document.getElementById("goBtn").addEventListener("click", function () { showPage("ingredients"); }); // The big home button opens the ingredients page
+
+Object.keys(recipes).forEach(function (name) { // Go through every food name
+  const option = document.createElement("option"); // Make a new suggestion item
+  option.value = name; // Its text is the food name
+  foodList.appendChild(option); // Add it to the suggestion list
+}); // End of loop
+
+function findFood(text) { // Function that finds a recipe from what the visitor typed
+  const typed = text.trim().toLowerCase(); // Remove extra spaces and make letters small
+  return Object.keys(recipes).find(function (key) { return typed.includes(key); }); // Returns a food whose name is inside the text (so "fried chicken" finds chicken)
+} // End of findFood
+
+function showRecipe(key) { // Function that draws the recipe on the page
+  const r = recipes[key]; // Get the recipe data
+  resultBox.innerHTML = ""; // Clear any old answer
+  const card = document.createElement("div"); // Make a new card
+  card.className = "card"; // Give it the card style
+  const title = document.createElement("h2"); // Make the recipe heading
+  title.className = "dish-title"; // Style it
+  title.textContent = r.emoji + " " + key.charAt(0).toUpperCase() + key.slice(1); // Emoji + food name with a capital first letter
+  card.appendChild(title); // Put heading in card
+  const h3a = document.createElement("h3"); // Sub-heading for ingredients
+  h3a.textContent = "Ingredients"; // Its text
+  card.appendChild(h3a); // Put it in the card
+  const ul = document.createElement("ul"); // Bullet list for ingredients
+  r.ingredients.forEach(function (i) { const li = document.createElement("li"); li.textContent = i; ul.appendChild(li); }); // One bullet per ingredient
+  card.appendChild(ul); // Put the list in the card
+  const h3b = document.createElement("h3"); // Sub-heading for steps
+  h3b.textContent = "How to cook"; // Its text
+  card.appendChild(h3b); // Put it in the card
+  const ol = document.createElement("ol"); // Numbered list for steps
+  r.steps.forEach(function (s) { const li = document.createElement("li"); li.textContent = s; ol.appendChild(li); }); // One number per step
+  card.appendChild(ol); // Put the list in the card
+  resultBox.appendChild(card); // Show the finished card on the page
+} // End of showRecipe
+
+function showNotFound(text) { // Function for foods we do not have yet
+  resultBox.innerHTML = ""; // Clear old answer
+  const card = document.createElement("div"); // New card
+  card.className = "card"; // Card style
+  card.textContent = "Sorry, we do not have “" + text + "” yet. Try: " + Object.keys(recipes).join(", ") + "."; // Friendly message with the foods we do have
+  resultBox.appendChild(card); // Show it
+} // End of showNotFound
+
+document.getElementById("searchForm").addEventListener("submit", function (e) { // Runs when the visitor presses Search or Enter
+  e.preventDefault(); // Stop the page from reloading
+  const text = document.getElementById("foodInput").value; // Read what was typed
+  const key = findFood(text); // Look for a matching recipe
+  if (key) { showRecipe(key); } else { showNotFound(text.trim()); } // Show the recipe, or the "not found" message
+}); // End of the submit handler

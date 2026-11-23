@@ -1,5 +1,5 @@
 const recipeDatabase = [
-  // AFRICAN
+  // ==================== AFRICAN (9) ====================
   {
     name: "Jollof Rice",
     cuisine: "African",
@@ -111,8 +111,134 @@ const recipeDatabase = [
       "Prick the boiled eggs lightly and nestle them into the stew for the final 10 minutes before serving."
     ]
   },
+  {
+    name: "East African Beef Pilau",
+    cuisine: "African",
+    prepTime: "20 mins",
+    cookTime: "35 mins",
+    servings: "6 servings",
+    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
+    description: "Aromatic Swahili spiced rice cooked with tender beef cubes, caramelized onions, cumin, cardamom, and cloves.",
+    ingredients: [
+      "2 cups basmati rice, rinsed and soaked 15 minutes",
+      "1.5 lbs tender beef sirloin, cut into 1-inch cubes",
+      "2 large red onions, thinly sliced",
+      "1 tbsp pilau masala (cumin, cardamom, cinnamon, cloves, black pepper)",
+      "1 tbsp garlic-ginger paste",
+      "2 medium potatoes, peeled and halved",
+      "4 cups beef broth",
+      "3 tbsp vegetable oil and 1 tsp salt"
+    ],
+    steps: [
+      "Heat oil in a heavy pot and fry sliced red onions for 10 to 12 minutes until deep golden brown.",
+      "Add beef cubes, garlic-ginger paste, and pilau masala; sear for 6 minutes until browned.",
+      "Pour in 1 cup of beef broth and simmer covered for 15 minutes until beef is tender.",
+      "Add potatoes, drained basmati rice, remaining broth, and salt. Bring to a boil.",
+      "Cover tightly, reduce heat to low, and steam for 18 minutes until rice is fluffy and aromatic."
+    ]
+  },
+  {
+    name: "Ugali & Sukuma Wiki",
+    cuisine: "African",
+    prepTime: "15 mins",
+    cookTime: "20 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    description: "Kenya's beloved staple meal of firm white cornmeal paired with savory braised collard greens and tomatoes.",
+    ingredients: [
+      "2 cups white maize meal (cornmeal)",
+      "4 cups water (for Ugali)",
+      "2 bunches collard greens (sukuma wiki), finely shredded",
+      "1 large onion, diced",
+      "2 ripe tomatoes, diced",
+      "2 tbsp vegetable oil",
+      "1/2 tsp salt and 1/2 tsp Royco mchuzi mix or bouillon"
+    ],
+    steps: [
+      "Heat oil in a skillet over medium heat. Saute diced onion for 4 minutes until translucent.",
+      "Add diced tomatoes, salt, and seasoning; cook for 4 minutes until softened into a light sauce.",
+      "Toss in shredded collard greens, stir well, and cook covered for 6 to 8 minutes until tender yet vibrant green.",
+      "Meanwhile, bring 4 cups water to a rolling boil in a heavy saucepan. Gradually pour in maize meal while stirring continuously with a wooden spoon.",
+      "Press and fold the thick cornmeal against the pot sides over medium-low heat for 5 minutes until firm and smooth. Shape into a mound and serve with greens."
+    ]
+  },
+  {
+    name: "Nigerian Egusi Soup",
+    cuisine: "African",
+    prepTime: "20 mins",
+    cookTime: "35 mins",
+    servings: "6 servings",
+    image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
+    description: "Rich West African melon seed stew simmered with palm oil, leafy greens, bell peppers, and tender beef.",
+    ingredients: [
+      "2 cups ground egusi (melon seeds)",
+      "1.5 lbs cooked beef chunks and stock",
+      "1/2 cup red palm oil",
+      "2 red bell peppers and 1 scotch bonnet, blended",
+      "1 large onion (half blended, half diced)",
+      "3 cups chopped spinach or bitterleaf",
+      "2 tbsp ground crayfish and 2 seasoning cubes"
+    ],
+    steps: [
+      "Mix ground egusi with 1/2 cup warm water to form a thick, smooth paste.",
+      "Heat palm oil in a pot over medium heat for 2 minutes, then saute diced onion.",
+      "Pour in the blended pepper mixture and fry for 8 minutes until reduced.",
+      "Spoon dollops of the egusi paste into the sauce, cover, and cook for 10 minutes without stirring so curds form.",
+      "Add beef, 2 cups meat stock, ground crayfish, and seasoning. Simmer for 10 minutes, fold in spinach for 3 minutes, and serve."
+    ]
+  },
+  {
+    name: "South African Bobotie",
+    cuisine: "African",
+    prepTime: "20 mins",
+    cookTime: "45 mins",
+    servings: "6 servings",
+    image: "https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&w=800&q=80",
+    description: "Spiced Cape Malay minced beef bake topped with a golden savory egg-milk custard and bay leaves.",
+    ingredients: [
+      "2 lbs lean ground beef",
+      "2 slices white bread soaked in 1 cup milk (reserve milk)",
+      "2 large onions, diced",
+      "2 tbsp mild curry powder, 1 tsp turmeric, 1/2 tsp cinnamon",
+      "3 tbsp fruit chutney and 1/3 cup raisins",
+      "2 large eggs",
+      "4 bay leaves and 2 tbsp butter"
+    ],
+    steps: [
+      "Preheat oven to 350°F (175°C). Saute onions in butter until soft, then stir in curry powder, turmeric, and cinnamon.",
+      "Add ground beef and cook for 8 minutes until browned.",
+      "Squeeze milk from bread (saving the milk), mash the bread, and stir it into the beef along with chutney, raisins, and salt.",
+      "Press the spiced beef mixture into a baking dish. Whisk eggs with the reserved milk and pour evenly over the top.",
+      "Arrange bay leaves on the custard and bake for 35 to 40 minutes until golden and set."
+    ]
+  },
+  {
+    name: "Mandazi (East African Coconut Doughnuts)",
+    cuisine: "African",
+    prepTime: "20 mins",
+    cookTime: "15 mins",
+    servings: "12 pieces",
+    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80",
+    description: "Light, pillowy Swahili spiced fried dough triangles infused with rich coconut milk and crushed cardamom.",
+    ingredients: [
+      "3 cups all-purpose flour",
+      "1/3 cup granulated sugar",
+      "2 tsp baking powder and 1/2 tsp ground cardamom",
+      "2 tbsp unsalted butter, melted",
+      "1 cup warm coconut milk",
+      "1 large egg, beaten",
+      "Vegetable oil for deep frying"
+    ],
+    steps: [
+      "Whisk flour, sugar, baking powder, and ground cardamom in a large bowl.",
+      "Mix in melted butter, beaten egg, and warm coconut milk until a soft, smooth dough forms.",
+      "Knead for 4 minutes, cover, and let rest for 15 minutes.",
+      "Roll dough to 1/3-inch thickness, cut into circles, and slice each circle into four triangles.",
+      "Deep-fry in 350°F (175°C) oil for 2 minutes per side until puffed and golden brown. Drain and serve warm with chai."
+    ]
+  },
 
-  // CHINESE
+  // ==================== CHINESE (9) ====================
   {
     name: "Kung Pao Chicken",
     cuisine: "Chinese",
@@ -220,8 +346,126 @@ const recipeDatabase = [
       "Pour in the sauce and bring to a bubble until thickened. Toss in the crispy pork for 30 seconds and serve immediately."
     ]
   },
+  {
+    name: "Beef and Broccoli Stir-Fry",
+    cuisine: "Chinese",
+    prepTime: "15 mins",
+    cookTime: "12 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80",
+    description: "Velvety sliced flank steak wok-seared with crisp-tender broccoli florets in a rich garlic-oyster sauce.",
+    ingredients: [
+      "1 lb flank steak, thinly sliced against the grain",
+      "4 cups fresh broccoli florets",
+      "3 cloves garlic and 1 tbsp fresh ginger, minced",
+      "1/3 cup beef broth",
+      "3 tbsp soy sauce and 2 tbsp oyster sauce",
+      "1 tbsp brown sugar and 1 tsp sesame oil",
+      "1 tbsp cornstarch and 2 tbsp vegetable oil"
+    ],
+    steps: [
+      "Toss sliced beef with 1 tbsp soy sauce and 1 tsp cornstarch; let sit for 10 minutes.",
+      "Whisk beef broth, remaining soy sauce, oyster sauce, brown sugar, sesame oil, and remaining cornstarch.",
+      "Blanch broccoli florets in boiling water for 90 seconds, then drain.",
+      "Sear beef in a hot oiled wok for 2 minutes per side until browned; remove from pan.",
+      "Stir-fry garlic and ginger for 30 seconds, return beef and broccoli, pour in sauce, and toss for 2 minutes until glossy."
+    ]
+  },
+  {
+    name: "Chicken Chow Mein",
+    cuisine: "Chinese",
+    prepTime: "15 mins",
+    cookTime: "12 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    description: "Wok-fried egg noodles tossed with tender chicken strips, shredded cabbage, carrots, and savory soy glaze.",
+    ingredients: [
+      "12 oz Chinese egg noodles, cooked and drained",
+      "1 lb boneless chicken breast, thinly sliced",
+      "2 cups shredded green cabbage",
+      "1 large carrot, julienned, and 3 scallions, sliced",
+      "3 tbsp soy sauce, 1.5 tbsp oyster sauce, 1 tsp dark soy sauce",
+      "1 tsp sesame oil and 2 tbsp vegetable oil"
+    ],
+    steps: [
+      "Whisk soy sauce, oyster sauce, dark soy sauce, and sesame oil in a small bowl.",
+      "Heat oil in a large wok over high heat. Stir-fry chicken slices for 4 minutes until cooked through.",
+      "Add shredded cabbage and carrots; stir-fry for 2 minutes until crisp-tender.",
+      "Toss in cooked egg noodles and pour the sauce evenly over the noodles.",
+      "Stir-fry vigorously for 2 to 3 minutes until noodles are lightly charred and coated. Garnish with scallions."
+    ]
+  },
+  {
+    name: "Steamed Pork & Chive Dumplings",
+    cuisine: "Chinese",
+    prepTime: "30 mins",
+    cookTime: "12 mins",
+    servings: "24 dumplings",
+    image: "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80",
+    description: "Juicy handmade Jiaozi dumplings filled with seasoned pork, garlic chives, and ginger with dipping sauce.",
+    ingredients: [
+      "24 round dumpling wrappers",
+      "12 oz ground pork",
+      "1/2 cup finely chopped garlic chives or scallions",
+      "1 tbsp grated ginger and 1 clove minced garlic",
+      "2 tbsp soy sauce, 1 tbsp sesame oil, 1/4 tsp white pepper",
+      "2 tbsp black rice vinegar and 1 tsp chili oil (for dipping)"
+    ],
+    steps: [
+      "Mix ground pork, garlic chives, ginger, garlic, soy sauce, sesame oil, and white pepper in a bowl until sticky.",
+      "Place 1 tbsp filling in the center of a wrapper, moisten edges with water, and pleat firmly to seal.",
+      "Line a bamboo steamer with parchment paper and arrange dumplings with space between them.",
+      "Steam over boiling water for 10 to 12 minutes until wrappers are translucent and filling is cooked.",
+      "Serve hot alongside black vinegar and chili oil dipping sauce."
+    ]
+  },
+  {
+    name: "Egg Drop Soup",
+    cuisine: "Chinese",
+    prepTime: "5 mins",
+    cookTime: "10 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
+    description: "Velvety golden chicken broth laced with delicate ribbons of whisked egg, sweet corn, and sesame oil.",
+    ingredients: [
+      "4 cups rich chicken broth",
+      "3 large eggs, lightly beaten",
+      "1/2 cup sweet corn kernels",
+      "1.5 tbsp cornstarch mixed with 3 tbsp water",
+      "1/4 tsp ground turmeric (for golden color) and pinch of white pepper",
+      "1/2 tsp toasted sesame oil and 2 sliced scallions"
+    ],
+    steps: [
+      "Bring chicken broth, corn kernels, turmeric, and white pepper to a gentle simmer in a saucepan.",
+      "Stir in the cornstarch slurry and simmer for 1 minute until the broth becomes silky.",
+      "Stir the soup in a slow circular motion while gradually drizzling in the beaten eggs to form delicate ribbons.",
+      "Remove from heat, drizzle with sesame oil, and top with sliced scallions."
+    ]
+  },
+  {
+    name: "Char Siu (Chinese BBQ Pork)",
+    cuisine: "Chinese",
+    prepTime: "15 mins",
+    cookTime: "40 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=800&q=80",
+    description: "Cantonese honey-glazed roasted pork tenderloin marinated in hoisin, soy sauce, and five-spice powder.",
+    ingredients: [
+      "1.5 lbs pork tenderloin or pork shoulder strips",
+      "3 tbsp hoisin sauce and 2 tbsp soy sauce",
+      "2 tbsp honey (plus 1 tbsp for glazing)",
+      "1 tbsp Shaoxing wine or apple juice",
+      "1 tsp Chinese five-spice powder and 2 minced garlic cloves"
+    ],
+    steps: [
+      "Whisk hoisin sauce, soy sauce, 2 tbsp honey, Shaoxing wine, five-spice powder, and garlic; marinate pork for at least 1 hour.",
+      "Preheat oven to 400°F (200°C) and place pork on a foil-lined roasting rack.",
+      "Roast for 20 minutes, baste with remaining marinade, and flip.",
+      "Brush with pure honey and roast another 15 to 20 minutes until caramelized and glossy. Slice thinly to serve."
+    ]
+  },
 
-  // INTERNATIONAL
+  // ==================== INTERNATIONAL (9) ====================
   {
     name: "Classic Pancakes",
     cuisine: "International",
@@ -323,8 +567,129 @@ const recipeDatabase = [
       "Cover the skillet and cook for 5 to 7 minutes until egg whites are set and yolks remain soft. Top with feta and parsley."
     ]
   },
+  {
+    name: "Classic Cheeseburger",
+    cuisine: "International",
+    prepTime: "15 mins",
+    cookTime: "10 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80",
+    description: "Juicy seared beef patties topped with melted aged cheddar, crisp lettuce, tomato, and toasted brioche buns.",
+    ingredients: [
+      "1.5 lbs ground chuck beef (80/20 lean-to-fat)",
+      "4 brioche burger buns, split and toasted",
+      "4 slices sharp cheddar cheese",
+      "4 leaves butter lettuce and 4 thick tomato slices",
+      "1/2 red onion, thinly sliced, and dill pickle chips",
+      "1 tsp kosher salt and 1/2 tsp freshly ground black pepper"
+    ],
+    steps: [
+      "Divide beef into 4 loose balls, gently press into 3/4-inch patties, and make a shallow thumb indent in each center.",
+      "Season both sides generously with kosher salt and black pepper right before cooking.",
+      "Sear patties in a hot cast-iron skillet for 3 to 4 minutes per side.",
+      "Place a slice of cheddar cheese on each patty during the final minute and cover briefly to melt.",
+      "Assemble on toasted brioche buns with lettuce, tomato, red onion, and pickles."
+    ]
+  },
+  {
+    name: "Spanish Seafood Paella",
+    cuisine: "International",
+    prepTime: "20 mins",
+    cookTime: "35 mins",
+    servings: "6 servings",
+    image: "https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=800&q=80",
+    description: "Saffron-infused short-grain rice simmered in a wide pan with shrimp, mussels, peas, and roasted peppers.",
+    ingredients: [
+      "2 cups Bomba or Arborio rice",
+      "12 large shrimp, peeled and deveined",
+      "12 fresh mussels, scrubbed",
+      "4 cups warm seafood or chicken stock infused with a pinch of saffron",
+      "1 red bell pepper, diced, and 1 onion, finely chopped",
+      "1 tsp smoked paprika and 3 cloves garlic, minced",
+      "1/2 cup green peas, 3 tbsp olive oil, and lemon wedges"
+    ],
+    steps: [
+      "Heat olive oil in a wide paella pan over medium heat. Saute onion and bell pepper for 5 minutes.",
+      "Stir in garlic, smoked paprika, and rice for 2 minutes until grains are coated.",
+      "Pour in warm saffron stock, bring to a simmer, and cook uncovered without stirring for 15 minutes.",
+      "Nestle shrimp, mussels, and green peas into the rice; cook for 8 to 10 minutes until shells open and shrimp turn pink.",
+      "Rest for 5 minutes and serve with fresh lemon wedges."
+    ]
+  },
+  {
+    name: "Greek Village Salad (Horiatiki)",
+    cuisine: "International",
+    prepTime: "15 mins",
+    cookTime: "0 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80",
+    description: "Crisp Mediterranean wedges of ripe tomato, cucumber, Kalamata olives, red onion, and block feta.",
+    ingredients: [
+      "4 large vine-ripened tomatoes, cut into wedges",
+      "1 English cucumber, thickly sliced into half-moons",
+      "1 green bell pepper, sliced into rings",
+      "1/2 red onion, thinly sliced",
+      "1/2 cup Kalamata olives",
+      "7 oz block Greek feta cheese",
+      "1/4 cup extra-virgin olive oil, 1 tbsp red wine vinegar, 1 tsp dried oregano"
+    ],
+    steps: [
+      "Arrange tomato wedges, sliced cucumber, green bell pepper, and red onion in a wide shallow bowl.",
+      "Scatter Kalamata olives evenly across the vegetables.",
+      "Place the slab of Greek feta cheese on top and sprinkle generously with dried oregano.",
+      "Drizzle extra-virgin olive oil and red wine vinegar over the salad just before serving."
+    ]
+  },
+  {
+    name: "French Onion Soup",
+    cuisine: "International",
+    prepTime: "15 mins",
+    cookTime: "45 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
+    description: "Deeply caramelized sweet onions simmered in rich beef broth and topped with broiled Gruyere baguette.",
+    ingredients: [
+      "4 large yellow onions, thinly sliced",
+      "3 tbsp unsalted butter and 1 tbsp olive oil",
+      "6 cups rich beef broth",
+      "1/2 cup dry white wine",
+      "4 thick slices crusty French baguette, toasted",
+      "1.5 cups shredded Gruyere cheese",
+      "3 sprigs fresh thyme, salt, and black pepper"
+    ],
+    steps: [
+      "Melt butter and olive oil in a Dutch oven over medium-low heat. Cook sliced onions for 30 minutes, stirring occasionally until deep mahogany brown.",
+      "Pour in white wine to deglaze the pan, scraping up browned bits.",
+      "Add beef broth, thyme sprigs, salt, and pepper; simmer for 15 minutes.",
+      "Ladle soup into oven-safe crocks, float toasted baguette slices on top, and pile with Gruyere cheese.",
+      "Broil for 3 minutes until cheese is bubbling and golden."
+    ]
+  },
+  {
+    name: "Avocado & Poached Egg Toast",
+    cuisine: "International",
+    prepTime: "10 mins",
+    cookTime: "5 mins",
+    servings: "2 servings",
+    image: "https://images.unsplash.com/photo-1525351484163-7529414342d8?auto=format&fit=crop&w=800&q=80",
+    description: "Crusty toasted sourdough layered with lemon-mashed avocado, soft poached eggs, and chili flakes.",
+    ingredients: [
+      "2 thick slices artisan sourdough bread, toasted",
+      "1 large ripe Hass avocado",
+      "2 large fresh eggs",
+      "1 tbsp fresh lemon juice",
+      "1 tsp white vinegar (for poaching water)",
+      "Flaky sea salt, black pepper, and red pepper flakes"
+    ],
+    steps: [
+      "Mash the ripe avocado in a small bowl with lemon juice, flaky sea salt, and black pepper.",
+      "Bring a saucepan of water to a gentle simmer and add white vinegar.",
+      "Crack each egg into a small ramekin, swirl the water gently, and slide the egg in; poach for 3 minutes.",
+      "Spread mashed avocado generously over warm sourdough toast, top with poached eggs, and finish with chili flakes."
+    ]
+  },
 
-  // ITALIAN
+  // ==================== ITALIAN (9) ====================
   {
     name: "Spaghetti Carbonara",
     cuisine: "Italian",
@@ -425,8 +790,127 @@ const recipeDatabase = [
       "Toss fettuccine into the sauce (adding pasta water if needed), top with sliced chicken and parsley."
     ]
   },
+  {
+    name: "Classic Beef Lasagna",
+    cuisine: "Italian",
+    prepTime: "30 mins",
+    cookTime: "45 mins",
+    servings: "8 servings",
+    image: "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=800&q=80",
+    description: "Layered pasta sheets baked with rich Bolognese meat sauce, creamy ricotta, and melted mozzarella.",
+    ingredients: [
+      "12 lasagna noodles, boiled until tender",
+      "1.5 lbs ground beef",
+      "24 oz marinara tomato sauce",
+      "15 oz whole-milk ricotta cheese",
+      "3 cups shredded mozzarella cheese",
+      "1/2 cup grated Parmesan cheese and 1 egg",
+      "2 cloves garlic, minced, and 1 tbsp Italian herbs"
+    ],
+    steps: [
+      "Preheat oven to 375°F (190°C). Brown ground beef with garlic and Italian herbs, drain fat, and stir in marinara sauce.",
+      "Mix ricotta cheese, egg, half the Parmesan, and a pinch of salt in a bowl.",
+      "Spread 1 cup meat sauce in a 9x13-inch baking dish. Layer 4 noodles, half the ricotta, mozzarella, and meat sauce.",
+      "Repeat layers and finish with noodles, remaining sauce, mozzarella, and Parmesan.",
+      "Bake covered with foil for 25 minutes, uncover, and bake 15 minutes more until golden."
+    ]
+  },
+  {
+    name: "Penne Arrabbiata",
+    cuisine: "Italian",
+    prepTime: "10 mins",
+    cookTime: "18 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=800&q=80",
+    description: "Al dente penne rigate coated in a bold Roman tomato sauce infused with garlic, olive oil, and red chili flakes.",
+    ingredients: [
+      "1 lb penne rigate pasta",
+      "1 can (28 oz) crushed San Marzano tomatoes",
+      "4 cloves garlic, thinly sliced",
+      "1 tsp crushed red chili flakes",
+      "1/4 cup extra-virgin olive oil",
+      "1/3 cup fresh flat-leaf parsley, chopped",
+      "Grated Pecorino Romano for serving"
+    ],
+    steps: [
+      "Bring a large pot of salted water to a boil and cook penne until al dente.",
+      "Meanwhile, warm olive oil in a wide skillet over medium heat. Saute sliced garlic and red chili flakes for 90 seconds.",
+      "Pour in crushed tomatoes and season with salt; simmer for 12 minutes until thick and vibrant.",
+      "Toss drained penne directly into the spicy tomato sauce with chopped parsley and serve with Pecorino."
+    ]
+  },
+  {
+    name: "Eggplant Parmigiana",
+    cuisine: "Italian",
+    prepTime: "25 mins",
+    cookTime: "35 mins",
+    servings: "6 servings",
+    image: "https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=800&q=80",
+    description: "Golden baked eggplant slices layered with sweet basil marinara, fresh mozzarella, and Parmigiano-Reggiano.",
+    ingredients: [
+      "2 large globe eggplants, sliced into 1/3-inch rounds",
+      "3 cups marinara sauce",
+      "12 oz fresh mozzarella, sliced",
+      "3/4 cup grated Parmigiano-Reggiano",
+      "1 cup seasoned breadcrumbs and 2 beaten eggs",
+      "Fresh basil leaves and olive oil"
+    ],
+    steps: [
+      "Preheat oven to 400°F (200°C). Dip eggplant slices into beaten egg, then coat in seasoned breadcrumbs.",
+      "Arrange on oiled baking sheets and bake for 18 minutes until golden and tender.",
+      "In a baking dish, layer marinara sauce, baked eggplant slices, mozzarella, Parmigiano, and basil.",
+      "Repeat layers and bake for 20 minutes until cheese is bubbling and browned."
+    ]
+  },
+  {
+    name: "Caprese Salad",
+    cuisine: "Italian",
+    prepTime: "10 mins",
+    cookTime: "0 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?auto=format&fit=crop&w=800&q=80",
+    description: "Freshly sliced heirloom tomatoes layered with creamy fior di latte mozzarella, sweet basil, and olive oil.",
+    ingredients: [
+      "3 large ripe heirloom tomatoes, sliced 1/4-inch thick",
+      "12 oz fresh mozzarella ball, sliced 1/4-inch thick",
+      "1 bunch fresh sweet basil leaves",
+      "3 tbsp extra-virgin olive oil",
+      "1 tbsp aged balsamic glaze",
+      "Flaky sea salt and freshly cracked black pepper"
+    ],
+    steps: [
+      "Alternate overlapping slices of ripe tomato and fresh mozzarella on a serving platter.",
+      "Tuck fresh whole basil leaves between the tomato and mozzarella slices.",
+      "Drizzle generously with extra-virgin olive oil and aged balsamic glaze.",
+      "Finish with flaky sea salt and freshly cracked black pepper."
+    ]
+  },
+  {
+    name: "Classic Tiramisu",
+    cuisine: "Italian",
+    prepTime: "25 mins",
+    cookTime: "0 mins",
+    servings: "8 servings",
+    image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80",
+    description: "Chilled Venetian dessert of espresso-dipped ladyfingers layered with whipped mascarpone cream and cocoa.",
+    ingredients: [
+      "24 crisp savoiardi (ladyfinger biscuits)",
+      "16 oz mascarpone cheese, room temperature",
+      "4 large egg yolks and 1/2 cup granulated sugar",
+      "1 cup heavy whipping cream",
+      "1.5 cups freshly brewed espresso, cooled",
+      "2 tbsp unsweetened Dutch-process cocoa powder"
+    ],
+    steps: [
+      "Whisk egg yolks and sugar over a gentle double boiler for 4 minutes until pale and thickened; cool slightly and fold in mascarpone.",
+      "Whip heavy cream to stiff peaks and gently fold into the mascarpone mixture.",
+      "Quickly dip each ladyfinger into cooled espresso (1 second per side) and arrange a single layer in an 8x8-inch dish.",
+      "Spread half the mascarpone cream over the biscuits, repeat with a second dipped layer, and top with remaining cream.",
+      "Chill for at least 4 hours and dust generously with cocoa powder before serving."
+    ]
+  },
 
-  // INDIAN
+  // ==================== INDIAN (9) ====================
   {
     name: "Butter Chicken",
     cuisine: "Indian",
@@ -530,8 +1014,124 @@ const recipeDatabase = [
       "Cover tightly and steam over very low heat for 18 minutes. Gently fluff layers before serving."
     ]
   },
+  {
+    name: "Chicken Tikka Masala",
+    cuisine: "Indian",
+    prepTime: "25 mins",
+    cookTime: "25 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+    description: "Char-grilled spiced chicken tikka pieces simmered in a smoky, creamy roasted tomato-coriander masala.",
+    ingredients: [
+      "1.5 lbs boneless chicken breast, cubed",
+      "1/2 cup plain yogurt, 1 tbsp lemon juice, 1 tbsp garam masala",
+      "1 large onion, finely chopped",
+      "1 can (15 oz) crushed tomatoes",
+      "1/2 cup heavy cream",
+      "1 tbsp ginger-garlic paste, 1 tsp cumin, 1 tsp paprika",
+      "2 tbsp oil and fresh cilantro"
+    ],
+    steps: [
+      "Marinate chicken in yogurt, lemon juice, half the garam masala, and salt for 20 minutes; broil or pan-sear until charred.",
+      "Saute chopped onion in oil until golden, then add ginger-garlic paste, cumin, paprika, and remaining garam masala.",
+      "Pour in crushed tomatoes and simmer for 12 minutes until rich and thick.",
+      "Stir in heavy cream and grilled chicken tikka pieces; simmer for 5 minutes and garnish with cilantro."
+    ]
+  },
+  {
+    name: "Dal Tadka (Spiced Yellow Lentils)",
+    cuisine: "Indian",
+    prepTime: "10 mins",
+    cookTime: "25 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    description: "Comforting yellow split lentils simmered with turmeric and finished with a sizzling cumin-garlic ghee tadka.",
+    ingredients: [
+      "1 cup yellow split lentils (toor or moong dal), rinsed",
+      "3.5 cups water and 1/2 tsp turmeric powder",
+      "1 medium tomato, finely diced",
+      "2 tbsp ghee or oil",
+      "1 tsp whole cumin seeds and 2 dried red chilies",
+      "3 cloves garlic, thinly sliced, and fresh cilantro"
+    ],
+    steps: [
+      "Simmer rinsed lentils, water, turmeric, and salt in a pot for 20 minutes until creamy and tender.",
+      "Stir in diced tomato and simmer 3 minutes more.",
+      "In a small pan, heat ghee until shimmering; sizzle cumin seeds, sliced garlic, and dried chilies for 30 seconds.",
+      "Pour the sizzling tadka directly over the warm dal, garnish with cilantro, and serve with rice."
+    ]
+  },
+  {
+    name: "Aloo Gobi (Spiced Potato & Cauliflower)",
+    cuisine: "Indian",
+    prepTime: "15 mins",
+    cookTime: "20 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+    description: "Dry-roasted cauliflower florets and golden potatoes tossed with cumin, turmeric, ginger, and fresh coriander.",
+    ingredients: [
+      "1 medium head cauliflower, cut into bite-sized florets",
+      "2 medium Yukon Gold potatoes, peeled and diced",
+      "1 medium onion, finely diced",
+      "1 tsp cumin seeds, 1/2 tsp turmeric, 1 tsp ground coriander",
+      "1/2 tsp garam masala and 1 tbsp grated ginger",
+      "2.5 tbsp vegetable oil and fresh cilantro"
+    ],
+    steps: [
+      "Heat oil in a wide skillet over medium heat and sizzle cumin seeds for 20 seconds.",
+      "Add diced onion and grated ginger; saute for 4 minutes until softened.",
+      "Add diced potatoes, cauliflower florets, turmeric, coriander, and salt; toss well to coat in spices.",
+      "Cover and cook over medium-low heat for 15 minutes, stirring gently halfway, until tender. Sprinkle with garam masala and cilantro."
+    ]
+  },
+  {
+    name: "Crispy Vegetable Samosas",
+    cuisine: "Indian",
+    prepTime: "30 mins",
+    cookTime: "20 mins",
+    servings: "12 samosas",
+    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+    description: "Flaky golden pastry triangles stuffed with spiced mashed potatoes, green peas, cumin, and ginger.",
+    ingredients: [
+      "2 cups all-purpose flour and 1/4 cup melted ghee or oil",
+      "3 medium potatoes, boiled, peeled, and coarsely mashed",
+      "1/2 cup green peas",
+      "1 tsp cumin seeds, 1 tsp garam masala, 1/2 tsp amchur or lemon juice",
+      "1 tbsp grated ginger and 2 tbsp chopped cilantro",
+      "Oil for deep frying"
+    ],
+    steps: [
+      "Rub melted ghee into flour with 1/2 tsp salt; add ~6 tbsp cold water to knead a firm dough. Rest 20 minutes.",
+      "Saute cumin seeds and ginger in 1 tbsp oil, then stir in mashed potatoes, peas, garam masala, lemon juice, and cilantro.",
+      "Divide dough into 6 balls, roll into ovals, and cut in half. Shape each half into a cone, fill with potato mixture, and seal.",
+      "Fry in 340°F (170°C) oil for 5 to 6 minutes until crisp and golden brown."
+    ]
+  },
+  {
+    name: "Garlic Butter Naan",
+    cuisine: "Indian",
+    prepTime: "20 mins",
+    cookTime: "10 mins",
+    servings: "6 flatbreads",
+    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+    description: "Soft, blistered skillet flatbread brushed generously with melted garlic-cilantro butter.",
+    ingredients: [
+      "2 cups all-purpose flour",
+      "1 tsp instant yeast and 1 tsp sugar",
+      "1/4 cup plain yogurt and 1/2 cup warm water",
+      "3 tbsp melted butter",
+      "2 cloves garlic, finely minced",
+      "2 tbsp fresh cilantro, chopped, and 1/2 tsp salt"
+    ],
+    steps: [
+      "Combine flour, yeast, sugar, salt, yogurt, and warm water; knead for 5 minutes into a soft, elastic dough. Rest 30 minutes.",
+      "Divide dough into 6 balls and roll each into a 7-inch oval.",
+      "Cook each naan in a dry, hot cast-iron skillet for 90 seconds until bubbles puff up; flip and cook 1 minute until blistered.",
+      "Brush immediately with melted butter mixed with minced garlic and chopped cilantro."
+    ]
+  },
 
-  // JAPANESE
+  // ==================== JAPANESE (8) ====================
   {
     name: "Chicken Teriyaki",
     cuisine: "Japanese",
@@ -631,13 +1231,220 @@ const recipeDatabase = [
       "Arrange salmon strips, avocado slices, and cucumber matchsticks horizontally across the center.",
       "Roll tightly using the bamboo mat, seal the edge with a dab of water, and slice into 8 pieces with a wet sharp knife."
     ]
+  },
+  {
+    name: "Shrimp & Vegetable Tempura",
+    cuisine: "Japanese",
+    prepTime: "20 mins",
+    cookTime: "15 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1581781870027-04212e231e96?auto=format&fit=crop&w=800&q=80",
+    description: "Light, airy, shatteringly crisp battered shrimp and sweet potato slices served with warm tentsuyu dipping sauce.",
+    ingredients: [
+      "12 large shrimp, peeled with tails on and scored",
+      "1 small sweet potato and 1 zucchini, thinly sliced",
+      "1 cup ice-cold sparkling water",
+      "1 cup all-purpose flour plus 2 tbsp cornstarch",
+      "1 large egg yolk",
+      "3/4 cup dashi broth, 2 tbsp soy sauce, 2 tbsp mirin (for dipping sauce)",
+      "Vegetable oil for deep frying"
+    ],
+    steps: [
+      "Simmer dashi, soy sauce, and mirin for 1 minute to make the dipping sauce; set aside.",
+      "Whisk egg yolk and ice-cold sparkling water, then lightly fold in flour and cornstarch (leave batter slightly lumpy).",
+      "Heat oil to 350°F (175°C). Dip shrimp and vegetables in batter and fry in small batches for 2 to 3 minutes until pale gold and crisp.",
+      "Drain on a wire rack and serve immediately with tentsuyu sauce."
+    ]
+  },
+  {
+    name: "Beef Gyudon Bowl",
+    cuisine: "Japanese",
+    prepTime: "10 mins",
+    cookTime: "15 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=800&q=80",
+    description: "Thinly shaved ribeye beef and sweet onions simmered in savory dashi-soy broth over steamed Japanese rice.",
+    ingredients: [
+      "1 lb thinly shaved ribeye or sirloin beef",
+      "1 large yellow onion, thinly sliced",
+      "1 cup dashi broth",
+      "3 tbsp soy sauce, 3 tbsp mirin, 1 tbsp sugar",
+      "1 tsp grated fresh ginger",
+      "4 bowls steamed Japanese rice, sliced scallions, and pickled red ginger"
+    ],
+    steps: [
+      "Simmer dashi broth, soy sauce, mirin, sugar, and ginger in a wide skillet over medium heat.",
+      "Add sliced onions and cook for 5 minutes until tender and translucent.",
+      "Lay the shaved beef slices over the onions and simmer for 3 to 4 minutes until just cooked through.",
+      "Spoon beef, onions, and sweet-savory broth over warm bowls of rice; garnish with scallions and pickled ginger."
+    ]
+  },
+  {
+    name: "Pan-Seared Pork Gyoza",
+    cuisine: "Japanese",
+    prepTime: "25 mins",
+    cookTime: "10 mins",
+    servings: "24 gyoza",
+    image: "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80",
+    description: "Crispy-bottomed, juicy Japanese pan-fried dumplings stuffed with pork, cabbage, garlic, and ginger.",
+    ingredients: [
+      "24 round gyoza wrappers",
+      "10 oz ground pork",
+      "1 cup finely minced Napa cabbage (salted and squeezed dry)",
+      "2 scallions, finely chopped, and 1 tbsp grated ginger",
+      "1 tbsp soy sauce and 1 tsp sesame oil",
+      "1 tbsp vegetable oil and 1/3 cup water (for pan-steaming)"
+    ],
+    steps: [
+      "Combine ground pork, squeezed Napa cabbage, scallions, ginger, soy sauce, and sesame oil until well blended.",
+      "Fill each wrapper with 1 tbsp mixture, wet the rim, and fold with 4 to 5 pleats.",
+      "Heat vegetable oil in a non-stick skillet over medium-high heat. Arrange gyoza flat-side down and fry for 2 minutes until golden.",
+      "Pour 1/3 cup water into the skillet, cover immediately, and steam for 4 minutes until water evaporates and bottoms stay crisp."
+    ]
+  },
+  {
+    name: "Yaki Udon Stir-Fry",
+    cuisine: "Japanese",
+    prepTime: "15 mins",
+    cookTime: "10 mins",
+    servings: "4 servings",
+    image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    description: "Thick, chewy udon noodles wok-tossed with shiitake mushrooms, cabbage, carrots, and savory soy-mirin glaze.",
+    ingredients: [
+      "16 oz pre-cooked thick udon noodles",
+      "6 oz shiitake mushrooms, sliced",
+      "2 cups shredded green cabbage and 1 julienned carrot",
+      "3 tbsp soy sauce, 2 tbsp mirin, 1 tbsp oyster sauce",
+      "1 tbsp vegetable oil, 1 tsp sesame oil, and toasted sesame seeds"
+    ],
+    steps: [
+      "Loosen udon noodles in warm water for 1 minute, then drain thoroughly.",
+      "Whisk soy sauce, mirin, and oyster sauce in a small bowl.",
+      "Stir-fry shiitake mushrooms, cabbage, and carrots in a hot oiled skillet for 3 minutes.",
+      "Add udon noodles and pour in the sauce; toss for 2 minutes until coated and glossy. Finish with sesame oil and seeds."
+    ]
   }
 ];
 
 let currentCuisineFilter = "All";
+let selectedStarRating = 5;
+
+const ratingLabels = {
+  1: "1 out of 5 - Needs Improvement",
+  2: "2 out of 5 - Fair",
+  3: "3 out of 5 - Good",
+  4: "4 out of 5 - Very Good",
+  5: "5 out of 5 - Outstanding"
+};
+
+const defaultReviews = [
+  {
+    name: "Amara O.",
+    dish: "Jollof Rice",
+    rating: 5,
+    comment: "The ingredient checklist made prepping everything effortless. The Jollof Rice came out smoky and full of flavor on my very first attempt.",
+    date: "November 14, 2026"
+  },
+  {
+    name: "David K.",
+    dish: "Classic Miso Ramen",
+    rating: 5,
+    comment: "Finally a recipe website with zero clutter. Clicked Japanese cuisine, opened Miso Ramen, and had dinner on the table in 20 minutes.",
+    date: "November 17, 2026"
+  },
+  {
+    name: "Priya S.",
+    dish: "Butter Chicken",
+    rating: 4,
+    comment: "Very balanced spice measurements and super clear instructions. Loved being able to tick off each spice as I measured it.",
+    date: "November 19, 2026"
+  }
+];
+
+function getReviews() {
+  try {
+    const saved = localStorage.getItem("whitcooks_reviews_v1");
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+    }
+  } catch (err) {}
+  return defaultReviews;
+}
+
+function saveReviews(reviewsList) {
+  try {
+    localStorage.setItem("whitcooks_reviews_v1", JSON.stringify(reviewsList));
+  } catch (err) {}
+}
+
+function renderStarsSvg(count) {
+  let html = "";
+  for (let i = 1; i <= 5; i++) {
+    const fill = i <= count ? "currentColor" : "none";
+    html += '<svg width="16" height="16" viewBox="0 0 24 24" fill="' + fill + '" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';
+  }
+  return html;
+}
+
+function renderReviews() {
+  const listContainer = document.getElementById("reviews-list-container");
+  const avgEl = document.getElementById("average-rating-value");
+  const countEl = document.getElementById("total-reviews-count");
+
+  const reviews = getReviews();
+  const totalScore = reviews.reduce((sum, item) => sum + item.rating, 0);
+  const average = (totalScore / reviews.length).toFixed(1);
+
+  if (avgEl) avgEl.textContent = average;
+  if (countEl) {
+    countEl.textContent = reviews.length + (reviews.length === 1 ? " Verified Review" : " Verified Reviews");
+  }
+
+  if (!listContainer) return;
+
+  listContainer.innerHTML = reviews
+    .map(rev => {
+      const safeName = rev.name.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      const safeComment = rev.comment.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      const safeDish = rev.dish ? rev.dish.replace(/</g, "&lt;").replace(/>/g, "&gt;") : "";
+
+      return `
+        <article class="review-card fade-in">
+          <div class="review-card-top">
+            <div class="reviewer-identity">
+              <strong>${safeName}</strong>
+              ${safeDish ? `<span class="review-dish-tag">Tried: ${safeDish}</span>` : ""}
+            </div>
+            <div class="review-stars-display" aria-label="${rev.rating} out of 5 stars">
+              ${renderStarsSvg(rev.rating)}
+            </div>
+          </div>
+          <p class="review-comment-text">${safeComment}</p>
+          <span class="review-date">Posted on ${rev.date}</span>
+        </article>
+      `;
+    })
+    .join("");
+}
+
+function updateStarPickerUI(rating) {
+  selectedStarRating = rating;
+  document.querySelectorAll("#star-picker .star-btn").forEach(btn => {
+    const val = Number(btn.getAttribute("data-rating"));
+    btn.classList.toggle("active", val <= rating);
+  });
+  const labelEl = document.getElementById("rating-text-label");
+  if (labelEl) labelEl.textContent = ratingLabels[rating] || "";
+}
 
 function navigateTo(sectionName) {
-  ["home", "about", "finder"].forEach(sec => {
+  if (typeof openPage === "function") {
+    openPage(sectionName);
+    return;
+  }
+
+  ["home", "about", "finder", "reviews"].forEach(sec => {
     const el = document.getElementById("section-" + sec);
     if (el) el.classList.add("hidden");
   });
@@ -645,10 +1452,14 @@ function navigateTo(sectionName) {
   const target = document.getElementById("section-" + sectionName);
   if (target) target.classList.remove("hidden");
 
-  const navHome = document.getElementById("nav-home");
-  const navAbout = document.getElementById("nav-about");
-  if (navHome) navHome.classList.toggle("active", sectionName === "home");
-  if (navAbout) navAbout.classList.toggle("active", sectionName === "about");
+  ["home", "about", "reviews"].forEach(navKey => {
+    const btn = document.getElementById("nav-" + navKey);
+    if (btn) btn.classList.toggle("active", sectionName === navKey);
+  });
+
+  if (sectionName === "reviews") {
+    renderReviews();
+  }
 
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -782,14 +1593,6 @@ function displayRecipe(recipe) {
 
   container.classList.remove("hidden");
   container.scrollIntoView({ behavior: "smooth", block: "nearest" });
-
-  const closeBtn = document.getElementById("close-recipe-btn");
-  if (closeBtn) {
-    closeBtn.addEventListener("click", () => {
-      container.classList.add("hidden");
-      container.innerHTML = "";
-    });
-  }
 }
 
 function performSearch() {
@@ -806,57 +1609,129 @@ function performSearch() {
   if (match) displayRecipe(match);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  renderCatalog();
+function handleReviewSubmit() {
+  const nameInput = document.getElementById("reviewer-name");
+  const dishInput = document.getElementById("reviewer-dish");
+  const commentInput = document.getElementById("reviewer-comment");
+  const errorEl = document.getElementById("review-form-error");
+  const successEl = document.getElementById("review-form-success");
+  const formEl = document.getElementById("review-form");
 
-  const logoLink = document.getElementById("logo-link");
-  if (logoLink) {
-    logoLink.addEventListener("click", e => {
-      e.preventDefault();
-      navigateTo("home");
-    });
+  const nameVal = (nameInput ? nameInput.value : "").trim();
+  const dishVal = (dishInput ? dishInput.value : "").trim();
+  const commentVal = (commentInput ? commentInput.value : "").trim();
+
+  if (!nameVal || !commentVal) {
+    if (errorEl) errorEl.classList.remove("hidden");
+    if (successEl) successEl.classList.add("hidden");
+    return;
   }
 
-  document.querySelectorAll("[data-nav]").forEach(btn => {
-    btn.addEventListener("click", () => {
-      navigateTo(btn.getAttribute("data-nav"));
-    });
+  if (errorEl) errorEl.classList.add("hidden");
+
+  const today = new Date().toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
   });
 
-  document.querySelectorAll("[data-explore-cuisine]").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const cuisine = btn.getAttribute("data-explore-cuisine");
-      navigateTo("finder");
-      filterByCuisine(cuisine);
-    });
+  const currentReviews = getReviews();
+  currentReviews.unshift({
+    name: nameVal,
+    dish: dishVal,
+    rating: selectedStarRating,
+    comment: commentVal,
+    date: today
   });
 
-  document.querySelectorAll("[data-filter]").forEach(btn => {
-    btn.addEventListener("click", () => {
-      filterByCuisine(btn.getAttribute("data-filter"));
-    });
-  });
+  saveReviews(currentReviews);
+  renderReviews();
 
-  const searchInput = document.getElementById("food-search-input");
-  const searchBtn = document.getElementById("search-submit-btn");
-  if (searchInput) {
-    searchInput.addEventListener("input", renderCatalog);
-    searchInput.addEventListener("keydown", e => {
-      if (e.key === "Enter") performSearch();
-    });
+  if (formEl) formEl.reset();
+  updateStarPickerUI(5);
+
+  if (successEl) {
+    successEl.classList.remove("hidden");
+    setTimeout(() => successEl.classList.add("hidden"), 4000);
   }
-  if (searchBtn) {
-    searchBtn.addEventListener("click", performSearch);
+}
+
+document.addEventListener("click", e => {
+  if (e.target.closest("#logo-link")) {
+    e.preventDefault();
+    navigateTo("home");
+    return;
   }
 
-  const catalogGrid = document.getElementById("recipe-catalog-grid");
-  if (catalogGrid) {
-    catalogGrid.addEventListener("click", e => {
-      const card = e.target.closest("[data-recipe-name]");
-      if (!card) return;
-      const name = card.getAttribute("data-recipe-name");
-      const found = recipeDatabase.find(r => r.name === name);
-      if (found) displayRecipe(found);
-    });
+  const navBtn = e.target.closest("[data-nav]");
+  if (navBtn) {
+    navigateTo(navBtn.getAttribute("data-nav"));
+    return;
+  }
+
+  const exploreBtn = e.target.closest("[data-explore-cuisine]");
+  if (exploreBtn) {
+    const cuisine = exploreBtn.getAttribute("data-explore-cuisine");
+    navigateTo("finder");
+    filterByCuisine(cuisine);
+    return;
+  }
+
+  const filterBtn = e.target.closest("[data-filter]");
+  if (filterBtn) {
+    filterByCuisine(filterBtn.getAttribute("data-filter"));
+    return;
+  }
+
+  if (e.target.closest("#search-submit-btn")) {
+    performSearch();
+    return;
+  }
+
+  if (e.target.closest("#close-recipe-btn")) {
+    const container = document.getElementById("recipe-result-container");
+    if (container) {
+      container.classList.add("hidden");
+      container.innerHTML = "";
+    }
+    return;
+  }
+
+  const dishCard = e.target.closest("[data-recipe-name]");
+  if (dishCard) {
+    const name = dishCard.getAttribute("data-recipe-name");
+    const found = recipeDatabase.find(r => r.name === name);
+    if (found) displayRecipe(found);
+    return;
+  }
+
+  const starBtn = e.target.closest("#star-picker .star-btn");
+  if (starBtn) {
+    const rating = Number(starBtn.getAttribute("data-rating"));
+    updateStarPickerUI(rating);
+    return;
   }
 });
+
+document.addEventListener("submit", e => {
+  if (e.target && e.target.id === "review-form") {
+    e.preventDefault();
+    handleReviewSubmit();
+  }
+});
+
+document.addEventListener("input", e => {
+  if (e.target && e.target.id === "food-search-input") {
+    renderCatalog();
+  }
+});
+
+document.addEventListener("keydown", e => {
+  if (e.target && e.target.id === "food-search-input" && e.key === "Enter") {
+    e.preventDefault();
+    performSearch();
+  }
+});
+
+renderCatalog();
+renderReviews();

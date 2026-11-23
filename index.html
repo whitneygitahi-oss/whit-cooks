@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WhitCooks - Global Culinary & Ingredient Explorer</title>
+  <title>WhitCooks - Global Culinary & Ingredient Explorer (53 Recipes)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -14,7 +14,7 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#home" id="logo-link" class="brand-logo" aria-label="WhitCooks Home">
+      <a href="#home" id="logo-link" onclick="openPage('home'); return false;" class="brand-logo" aria-label="WhitCooks Home">
         <div class="logo-icon-box">
           <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="6" y="13" width="20" height="13" rx="3" stroke="#FAF7F2" stroke-width="2.3"/>
@@ -32,20 +32,22 @@
       </a>
 
       <nav class="desktop-nav">
-        <button type="button" id="nav-home" data-nav="home" class="nav-btn active">Home & Mission</button>
-        <button type="button" id="nav-about" data-nav="about" class="nav-btn">About Us</button>
-        <button type="button" id="nav-finder" data-nav="finder" class="btn-primary btn-sm">Ingredient & Recipe Finder</button>
+        <button type="button" id="nav-home" data-nav="home" onclick="openPage('home')" class="nav-btn active">Home & Mission</button>
+        <button type="button" id="nav-about" data-nav="about" onclick="openPage('about')" class="nav-btn">About Us</button>
+        <button type="button" id="nav-reviews" data-nav="reviews" onclick="openPage('reviews')" class="nav-btn">Reviews & Ratings</button>
+        <button type="button" id="nav-finder" data-nav="finder" onclick="openPage('finder')" class="btn-primary btn-sm">Ingredient & Recipe Finder</button>
       </nav>
 
       <div class="mobile-nav">
-        <button type="button" data-nav="finder" class="btn-primary btn-xs">Find Recipes</button>
+        <button type="button" data-nav="finder" onclick="openPage('finder')" class="btn-primary btn-xs">Find Recipes</button>
       </div>
     </div>
 
     <div class="mobile-subnav">
-      <button type="button" data-nav="home">Mission</button>
-      <button type="button" data-nav="about">About Us</button>
-      <button type="button" data-nav="finder" class="text-accent">Recipe Finder</button>
+      <button type="button" data-nav="home" onclick="openPage('home')">Mission</button>
+      <button type="button" data-nav="about" onclick="openPage('about')">About Us</button>
+      <button type="button" data-nav="reviews" onclick="openPage('reviews')">Reviews</button>
+      <button type="button" data-nav="finder" onclick="openPage('finder')" class="text-accent">Recipes</button>
     </div>
   </header>
 
@@ -62,16 +64,16 @@
               Cooking made effortless, <span class="text-accent italic">one ingredient</span> at a time.
             </h1>
             <p class="hero-description">
-              WhitCooks was built to eliminate guesswork in the kitchen. Explore authentic African, Chinese, International, Italian, Indian, and Japanese recipes with clear ingredient checklists and exact preparation steps.
+              WhitCooks was built to eliminate guesswork in the kitchen. Explore 53 authentic African, Chinese, International, Italian, Indian, and Japanese recipes with clear ingredient checklists and exact preparation steps.
             </p>
             <div class="hero-actions">
-              <button type="button" data-nav="finder" class="btn-primary btn-lg">
-                <span>Explore Ingredients & Recipes</span>
+              <button type="button" data-nav="finder" onclick="openPage('finder')" class="btn-primary btn-lg">
+                <span>Explore 53 Ingredients & Recipes</span>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </button>
-              <button type="button" data-nav="about" class="btn-outline btn-lg">Why We Made This</button>
+              <button type="button" data-nav="reviews" onclick="openPage('reviews')" class="btn-outline btn-lg">Rate & Review Us</button>
             </div>
           </div>
 
@@ -82,7 +84,7 @@
                   <span class="micro-label">Platform Overview</span>
                   <h3>Inside WhitCooks</h3>
                 </div>
-                <span class="status-badge">24 Global Recipes</span>
+                <span class="status-badge">53 Global Recipes</span>
               </div>
 
               <div class="feature-steps">
@@ -90,7 +92,7 @@
                   <div class="step-num">01</div>
                   <div>
                     <h4>6 Authentic World Cuisines</h4>
-                    <p>Browse curated recipes spanning African, Chinese, International, Italian, Indian, and Japanese traditions.</p>
+                    <p>Browse 53 curated recipes spanning African, Chinese, International, Italian, Indian, and Japanese traditions.</p>
                   </div>
                 </div>
                 <div class="feature-step-item">
@@ -121,7 +123,7 @@
               <p>Select a culinary tradition to filter dishes and explore authentic recipes.</p>
             </div>
             <button type="button" data-explore-cuisine="All" class="link-btn">
-              View All 24 Dishes
+              View All 53 Dishes
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
@@ -130,44 +132,44 @@
 
           <div class="cuisine-grid">
             <button type="button" data-explore-cuisine="African" class="cuisine-card">
-              <span class="cuisine-meta">4 Authentic Dishes</span>
+              <span class="cuisine-meta">9 Authentic Dishes</span>
               <h3>African</h3>
-              <p>Jollof Rice, Nyama Choma, Moroccan Tagine, and Doro Wat.</p>
+              <p>Jollof Rice, Nyama Choma, Ugali & Sukuma Wiki, Pilau, Tagine, Doro Wat, and more.</p>
               <span class="cuisine-cta">Explore African &rarr;</span>
             </button>
 
             <button type="button" data-explore-cuisine="Chinese" class="cuisine-card">
-              <span class="cuisine-meta">4 Authentic Dishes</span>
+              <span class="cuisine-meta">9 Authentic Dishes</span>
               <h3>Chinese</h3>
-              <p>Kung Pao Chicken, Vegetable Fried Rice, Mapo Tofu, and Sweet & Sour Pork.</p>
+              <p>Kung Pao Chicken, Vegetable Fried Rice, Mapo Tofu, Chow Mein, Dumplings, and more.</p>
               <span class="cuisine-cta">Explore Chinese &rarr;</span>
             </button>
 
             <button type="button" data-explore-cuisine="International" class="cuisine-card">
-              <span class="cuisine-meta">4 Authentic Dishes</span>
+              <span class="cuisine-meta">9 Authentic Dishes</span>
               <h3>International</h3>
-              <p>Classic Pancakes, Grilled Salmon, Beef Tacos, and Shakshuka.</p>
+              <p>Classic Pancakes, Grilled Salmon, Beef Tacos, Shakshuka, Paella, Burgers, and more.</p>
               <span class="cuisine-cta">Explore International &rarr;</span>
             </button>
 
             <button type="button" data-explore-cuisine="Italian" class="cuisine-card">
-              <span class="cuisine-meta">4 Authentic Dishes</span>
+              <span class="cuisine-meta">9 Authentic Dishes</span>
               <h3>Italian</h3>
-              <p>Spaghetti Carbonara, Margherita Pizza, Mushroom Risotto, and Chicken Alfredo.</p>
+              <p>Spaghetti Carbonara, Margherita Pizza, Mushroom Risotto, Lasagna, Tiramisu, and more.</p>
               <span class="cuisine-cta">Explore Italian &rarr;</span>
             </button>
 
             <button type="button" data-explore-cuisine="Indian" class="cuisine-card">
-              <span class="cuisine-meta">4 Authentic Dishes</span>
+              <span class="cuisine-meta">9 Authentic Dishes</span>
               <h3>Indian</h3>
-              <p>Butter Chicken, Palak Paneer, Chana Masala, and Vegetable Biryani.</p>
+              <p>Butter Chicken, Palak Paneer, Chana Masala, Vegetable Biryani, Samosas, and more.</p>
               <span class="cuisine-cta">Explore Indian &rarr;</span>
             </button>
 
             <button type="button" data-explore-cuisine="Japanese" class="cuisine-card">
-              <span class="cuisine-meta">4 Authentic Dishes</span>
+              <span class="cuisine-meta">8 Authentic Dishes</span>
               <h3>Japanese</h3>
-              <p>Chicken Teriyaki, Miso Ramen, Chicken Katsu Curry, and Salmon Sushi Rolls.</p>
+              <p>Chicken Teriyaki, Miso Ramen, Chicken Katsu Curry, Sushi Rolls, Tempura, and more.</p>
               <span class="cuisine-cta">Explore Japanese &rarr;</span>
             </button>
           </div>
@@ -182,7 +184,7 @@
               </svg>
             </div>
             <h3>Save Valuable Time</h3>
-            <p>Search any meal or ingredient and get straight to cooking within seconds.</p>
+            <p>Search any of our 53 meals or ingredients and get straight to cooking within seconds.</p>
           </div>
 
           <div class="pillar-card">
@@ -223,7 +225,7 @@
             Looking up a recipe online shouldn't feel like navigating an obstacle course. Too often, home cooks just want to know what ingredients to buy and how to prepare a dish—only to be met with endless scrolling, cluttered layouts, and auto-playing advertisements.
           </p>
           <p>
-            <strong>WhitCooks</strong> was created with a single purpose: to give everyday home cooks instant access to accurate ingredients and clear cooking steps across diverse world cuisines.
+            <strong>WhitCooks</strong> was created with a single purpose: to give everyday home cooks instant access to accurate ingredients and clear cooking steps across 53 diverse world recipes.
           </p>
 
           <div class="about-subgrid">
@@ -240,9 +242,9 @@
           <div class="about-cta-bar">
             <div>
               <h4>Ready to start cooking?</h4>
-              <p>Search our 24 curated recipes right now.</p>
+              <p>Search our 53 curated recipes right now.</p>
             </div>
-            <button type="button" data-nav="finder" class="btn-primary">Open Recipe Finder</button>
+            <button type="button" data-nav="finder" onclick="openPage('finder')" class="btn-primary">Open Recipe Finder</button>
           </div>
         </div>
       </div>
@@ -254,7 +256,7 @@
         <div class="section-center-header">
           <span class="eyebrow-text">Interactive Recipe Database</span>
           <h2>Ingredient & Recipe Finder</h2>
-          <p>Enter any dish name or ingredient below to reveal full ingredients and step-by-step cooking instructions.</p>
+          <p>Enter any dish name or ingredient below to reveal full ingredients and step-by-step cooking instructions across 53 dishes.</p>
         </div>
 
         <div class="search-panel">
@@ -266,7 +268,7 @@
               <input
                 type="text"
                 id="food-search-input"
-                placeholder="Search dish or ingredient (e.g., Jollof Rice, Ramen, Butter Chicken)..."
+                placeholder="Search dish or ingredient (e.g., Jollof Rice, Pilau, Ramen, Butter Chicken)..."
               />
             </div>
             <button type="button" id="search-submit-btn" class="btn-primary">Find Recipe</button>
@@ -274,13 +276,13 @@
 
           <div class="filter-bar">
             <span class="filter-label">Filter by Cuisine:</span>
-            <button type="button" data-filter="All" id="filter-All" class="filter-pill active">All (24)</button>
-            <button type="button" data-filter="African" id="filter-African" class="filter-pill">African</button>
-            <button type="button" data-filter="Chinese" id="filter-Chinese" class="filter-pill">Chinese</button>
-            <button type="button" data-filter="International" id="filter-International" class="filter-pill">International</button>
-            <button type="button" data-filter="Italian" id="filter-Italian" class="filter-pill">Italian</button>
-            <button type="button" data-filter="Indian" id="filter-Indian" class="filter-pill">Indian</button>
-            <button type="button" data-filter="Japanese" id="filter-Japanese" class="filter-pill">Japanese</button>
+            <button type="button" data-filter="All" id="filter-All" class="filter-pill active">All (53)</button>
+            <button type="button" data-filter="African" id="filter-African" class="filter-pill">African (9)</button>
+            <button type="button" data-filter="Chinese" id="filter-Chinese" class="filter-pill">Chinese (9)</button>
+            <button type="button" data-filter="International" id="filter-International" class="filter-pill">International (9)</button>
+            <button type="button" data-filter="Italian" id="filter-Italian" class="filter-pill">Italian (9)</button>
+            <button type="button" data-filter="Indian" id="filter-Indian" class="filter-pill">Indian (9)</button>
+            <button type="button" data-filter="Japanese" id="filter-Japanese" class="filter-pill">Japanese (8)</button>
           </div>
         </div>
 
@@ -288,10 +290,99 @@
 
         <div class="catalog-section">
           <div class="catalog-header">
-            <h3 id="catalog-heading">All Global Dishes (24)</h3>
+            <h3 id="catalog-heading">All Global Dishes (53)</h3>
             <span class="catalog-hint">Click any dish card to view ingredients & instructions</span>
           </div>
           <div id="recipe-catalog-grid" class="recipe-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CUSTOMER RATINGS & COMMENTS SECTION -->
+    <section id="section-reviews" class="page-section hidden fade-in">
+      <div class="container">
+        <div class="section-center-header">
+          <span class="eyebrow-text">Community Feedback</span>
+          <h2>Rate WhitCooks & Leave a Comment</h2>
+          <p>Share your cooking experience, rate our recipes, and let us know what dish you tried.</p>
+        </div>
+
+        <div class="reviews-layout">
+          <div class="review-form-card">
+            <h3>Submit Your Review</h3>
+            <p class="form-subtext">Your feedback helps fellow home cooks discover great recipes.</p>
+
+            <form id="review-form" novalidate>
+              <div class="form-group">
+                <label for="reviewer-name">Your Name</label>
+                <input type="text" id="reviewer-name" placeholder="e.g., Wanjiku M." required />
+              </div>
+
+              <div class="form-group">
+                <label for="reviewer-dish">Dish You Tried (Optional)</label>
+                <input type="text" id="reviewer-dish" placeholder="e.g., Jollof Rice, Pilau, Butter Chicken..." />
+              </div>
+
+              <div class="form-group">
+                <label>Your Star Rating</label>
+                <div class="star-rating-picker" id="star-picker" role="radiogroup" aria-label="Rate from 1 to 5 stars">
+                  <button type="button" class="star-btn active" data-rating="1" aria-label="1 Star">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                  </button>
+                  <button type="button" class="star-btn active" data-rating="2" aria-label="2 Stars">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                  </button>
+                  <button type="button" class="star-btn active" data-rating="3" aria-label="3 Stars">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                  </button>
+                  <button type="button" class="star-btn active" data-rating="4" aria-label="4 Stars">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                  </button>
+                  <button type="button" class="star-btn active" data-rating="5" aria-label="5 Stars">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                  </button>
+                  <span id="rating-text-label" class="rating-label">5 out of 5 - Outstanding</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="reviewer-comment">Your Comment</label>
+                <textarea id="reviewer-comment" rows="4" placeholder="Tell us what you enjoyed about the ingredients or cooking steps..." required></textarea>
+              </div>
+
+              <p id="review-form-error" class="form-error hidden">Please enter both your name and a comment before submitting.</p>
+              <p id="review-form-success" class="form-success hidden">Thank you! Your rating and comment have been posted.</p>
+
+              <button type="submit" id="submit-review-btn" class="btn-primary btn-full">Post Review</button>
+            </form>
+          </div>
+
+          <div class="reviews-feed-column">
+            <div class="rating-summary-banner">
+              <div>
+                <span class="micro-label">Overall Satisfaction</span>
+                <div class="avg-score-row">
+                  <strong id="average-rating-value">4.7</strong>
+                  <span>/ 5.0</span>
+                </div>
+              </div>
+              <div class="review-count-pill">
+                <span id="total-reviews-count">3 Verified Reviews</span>
+              </div>
+            </div>
+
+            <div id="reviews-list-container" class="reviews-list"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -303,12 +394,13 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <span class="brand-title-sm">WhitCooks</span>
-        <span class="footer-tagline">Authentic Global Recipes & Ingredients</span>
+        <span class="footer-tagline">53 Authentic Global Recipes & Ingredients</span>
       </div>
       <div class="footer-links">
-        <button type="button" data-nav="home">Mission</button>
-        <button type="button" data-nav="about">About Us</button>
-        <button type="button" data-nav="finder">Recipe Finder</button>
+        <button type="button" data-nav="home" onclick="openPage('home')">Mission</button>
+        <button type="button" data-nav="about" onclick="openPage('about')">About Us</button>
+        <button type="button" data-nav="finder" onclick="openPage('finder')">Recipe Finder</button>
+        <button type="button" data-nav="reviews" onclick="openPage('reviews')">Reviews & Ratings</button>
       </div>
       <div class="footer-copy">
         &copy; 2026 WhitCooks Culinary Platform. All rights reserved.
@@ -317,5 +409,30 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    function openPage(pageName) {
+      var pages = ["home", "about", "finder", "reviews"];
+      for (var i = 0; i < pages.length; i++) {
+        var section = document.getElementById("section-" + pages[i]);
+        if (section) {
+          if (pages[i] === pageName) {
+            section.classList.remove("hidden");
+            section.style.display = "block";
+          } else {
+            section.classList.add("hidden");
+            section.style.display = "none";
+          }
+        }
+        var navBtn = document.getElementById("nav-" + pages[i]);
+        if (navBtn) {
+          navBtn.classList.toggle("active", pages[i] === pageName);
+        }
+      }
+      if (typeof renderReviews === "function" && pageName === "reviews") {
+        renderReviews();
+      }
+      window.scrollTo(0, 0);
+    }
+  </script>
 </body>
 </html>
