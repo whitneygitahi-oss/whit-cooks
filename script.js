@@ -1,3 +1,4 @@
+// ==================== 53 GLOBAL RECIPES DATABASE (DISH-MATCHED PHOTOS) ====================
 const recipeDatabase = [
   // ==================== AFRICAN (9) ====================
   {
@@ -90,8 +91,8 @@ const recipeDatabase = [
     prepTime: "30 mins",
     cookTime: "1 hr 15 mins",
     servings: "6 servings",
-    image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80",
-    description: "Ethiopian spiced chicken stew simmered in caramelized red onions, berbere spice, and spiced butter.",
+    image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80",
+    description: "Ethiopian spiced chicken stew simmered in caramelized red onions, berbere spice, and hard-boiled eggs.",
     ingredients: [
       "2.5 lbs chicken drumsticks and thighs, scored",
       "4 large red onions, finely minced",
@@ -117,7 +118,7 @@ const recipeDatabase = [
     prepTime: "20 mins",
     cookTime: "35 mins",
     servings: "6 servings",
-    image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80",
     description: "Aromatic Swahili spiced rice cooked with tender beef cubes, caramelized onions, cumin, cardamom, and cloves.",
     ingredients: [
       "2 cups basmati rice, rinsed and soaked 15 minutes",
@@ -143,7 +144,7 @@ const recipeDatabase = [
     prepTime: "15 mins",
     cookTime: "20 mins",
     servings: "4 servings",
-    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
     description: "Kenya's beloved staple meal of firm white cornmeal paired with savory braised collard greens and tomatoes.",
     ingredients: [
       "2 cups white maize meal (cornmeal)",
@@ -168,7 +169,7 @@ const recipeDatabase = [
     prepTime: "20 mins",
     cookTime: "35 mins",
     servings: "6 servings",
-    image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&w=800&q=80",
     description: "Rich West African melon seed stew simmered with palm oil, leafy greens, bell peppers, and tender beef.",
     ingredients: [
       "2 cups ground egusi (melon seeds)",
@@ -448,7 +449,7 @@ const recipeDatabase = [
     prepTime: "15 mins",
     cookTime: "40 mins",
     servings: "4 servings",
-    image: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?auto=format&fit=crop&w=800&q=80",
     description: "Cantonese honey-glazed roasted pork tenderloin marinated in hoisin, soy sauce, and five-spice powder.",
     ingredients: [
       "1.5 lbs pork tenderloin or pork shoulder strips",
@@ -646,7 +647,7 @@ const recipeDatabase = [
     prepTime: "15 mins",
     cookTime: "45 mins",
     servings: "4 servings",
-    image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
     description: "Deeply caramelized sweet onions simmered in rich beef broth and topped with broiled Gruyere baguette.",
     ingredients: [
       "4 large yellow onions, thinly sliced",
@@ -1067,7 +1068,7 @@ const recipeDatabase = [
     prepTime: "15 mins",
     cookTime: "20 mins",
     servings: "4 servings",
-    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
     description: "Dry-roasted cauliflower florets and golden potatoes tossed with cumin, turmeric, ginger, and fresh coriander.",
     ingredients: [
       "1 medium head cauliflower, cut into bite-sized florets",
@@ -1113,7 +1114,7 @@ const recipeDatabase = [
     prepTime: "20 mins",
     cookTime: "10 mins",
     servings: "6 flatbreads",
-    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=800&q=80",
     description: "Soft, blistered skillet flatbread brushed generously with melted garlic-cilantro butter.",
     ingredients: [
       "2 cups all-purpose flour",
@@ -1262,7 +1263,7 @@ const recipeDatabase = [
     prepTime: "10 mins",
     cookTime: "15 mins",
     servings: "4 servings",
-    image: "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=800&q=80",
     description: "Thinly shaved ribeye beef and sweet onions simmered in savory dashi-soy broth over steamed Japanese rice.",
     ingredients: [
       "1 lb thinly shaved ribeye or sirloin beef",
@@ -1285,7 +1286,7 @@ const recipeDatabase = [
     prepTime: "25 mins",
     cookTime: "10 mins",
     servings: "24 gyoza",
-    image: "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1626804475297-41608ea09aeb?auto=format&fit=crop&w=800&q=80",
     description: "Crispy-bottomed, juicy Japanese pan-fried dumplings stuffed with pork, cabbage, garlic, and ginger.",
     ingredients: [
       "24 round gyoza wrappers",
@@ -1308,7 +1309,7 @@ const recipeDatabase = [
     prepTime: "15 mins",
     cookTime: "10 mins",
     servings: "4 servings",
-    image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=800&q=80",
     description: "Thick, chewy udon noodles wok-tossed with shiitake mushrooms, cabbage, carrots, and savory soy-mirin glaze.",
     ingredients: [
       "16 oz pre-cooked thick udon noodles",
@@ -1326,6 +1327,40 @@ const recipeDatabase = [
   }
 ];
 
+// ==================== THEME TOGGLE (LIGHT & DARK) ====================
+function applyTheme(theme) {
+  const isDark = theme === "dark";
+  document.body.classList.toggle("dark-theme", isDark);
+
+  const iconEl = document.getElementById("theme-icon");
+  const labelEl = document.getElementById("theme-label");
+  const mobileBtn = document.getElementById("theme-toggle-mobile");
+
+  if (iconEl) iconEl.textContent = isDark ? "☀️" : "🌙";
+  if (labelEl) labelEl.textContent = isDark ? "Light" : "Dark";
+  if (mobileBtn) mobileBtn.textContent = isDark ? "☀️" : "🌙";
+
+  try {
+    localStorage.setItem("whitcooks_theme", theme);
+  } catch (err) {}
+}
+
+function toggleTheme() {
+  const isCurrentlyDark = document.body.classList.contains("dark-theme");
+  const nextTheme = isCurrentlyDark ? "light" : "dark";
+  applyTheme(nextTheme);
+}
+
+(function initSavedTheme() {
+  try {
+    const savedTheme = localStorage.getItem("whitcooks_theme");
+    if (savedTheme === "dark" || savedTheme === "light") {
+      applyTheme(savedTheme);
+    }
+  } catch (err) {}
+})();
+
+// ==================== REVIEWS & RATINGS (5 PRE-LOADED REVIEWS) ====================
 let currentCuisineFilter = "All";
 let selectedStarRating = 5;
 
@@ -1350,20 +1385,34 @@ const defaultReviews = [
     dish: "Classic Miso Ramen",
     rating: 5,
     comment: "Finally a recipe website with zero clutter. Clicked Japanese cuisine, opened Miso Ramen, and had dinner on the table in 20 minutes.",
-    date: "November 17, 2026"
+    date: "November 16, 2026"
   },
   {
     name: "Priya S.",
     dish: "Butter Chicken",
-    rating: 4,
+    rating: 5,
     comment: "Very balanced spice measurements and super clear instructions. Loved being able to tick off each spice as I measured it.",
-    date: "November 19, 2026"
+    date: "November 18, 2026"
+  },
+  {
+    name: "Wanjiku M.",
+    dish: "East African Beef Pilau",
+    rating: 5,
+    comment: "The Dark Theme is so easy on the eyes while cooking at night, and the Pilau turned out fragrant and delicious.",
+    date: "November 20, 2026"
+  },
+  {
+    name: "Marco R.",
+    dish: "Spaghetti Carbonara",
+    rating: 4,
+    comment: "Authentic Roman proportions with Pecorino Romano and egg yolks—no heavy cream shortcuts. Turned out silky and delicious.",
+    date: "November 22, 2026"
   }
 ];
 
 function getReviews() {
   try {
-    const saved = localStorage.getItem("whitcooks_reviews_v1");
+    const saved = localStorage.getItem("whitcooks_reviews_v2");
     if (saved) {
       const parsed = JSON.parse(saved);
       if (Array.isArray(parsed) && parsed.length > 0) return parsed;
@@ -1374,7 +1423,7 @@ function getReviews() {
 
 function saveReviews(reviewsList) {
   try {
-    localStorage.setItem("whitcooks_reviews_v1", JSON.stringify(reviewsList));
+    localStorage.setItem("whitcooks_reviews_v2", JSON.stringify(reviewsList));
   } catch (err) {}
 }
 
@@ -1438,29 +1487,19 @@ function updateStarPickerUI(rating) {
   if (labelEl) labelEl.textContent = ratingLabels[rating] || "";
 }
 
+// ==================== NAVIGATION & CATALOG ====================
 function navigateTo(sectionName) {
   if (typeof openPage === "function") {
     openPage(sectionName);
     return;
   }
-
   ["home", "about", "finder", "reviews"].forEach(sec => {
     const el = document.getElementById("section-" + sec);
     if (el) el.classList.add("hidden");
   });
-
   const target = document.getElementById("section-" + sectionName);
   if (target) target.classList.remove("hidden");
-
-  ["home", "about", "reviews"].forEach(navKey => {
-    const btn = document.getElementById("nav-" + navKey);
-    if (btn) btn.classList.toggle("active", sectionName === navKey);
-  });
-
-  if (sectionName === "reviews") {
-    renderReviews();
-  }
-
+  if (sectionName === "reviews") renderReviews();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
@@ -1497,7 +1536,7 @@ function renderCatalog() {
   if (!grid) return;
 
   if (filtered.length === 0) {
-    grid.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; color: #5F5B55; padding: 32px;">No matching recipes found. Try another ingredient or select "All".</p>';
+    grid.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; color: var(--muted-text); padding: 32px;">No matching recipes found. Try another ingredient or select "All".</p>';
     return;
   }
 
@@ -1505,9 +1544,9 @@ function renderCatalog() {
     .map(recipe => `
       <button type="button" data-recipe-name="${recipe.name.replace(/"/g, '&quot;')}" class="dish-card">
         <div class="dish-img-wrap">
-          <img 
-            src="${recipe.image}" 
-            alt="${recipe.name}" 
+          <img
+            src="${recipe.image}"
+            alt="${recipe.name}"
             onerror="this.src='https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80'"
           />
           <span class="dish-cuisine-tag">${recipe.cuisine}</span>
@@ -1554,9 +1593,9 @@ function displayRecipe(recipe) {
   container.innerHTML = `
     <div class="recipe-detail-card fade-in">
       <div class="recipe-banner">
-        <img 
-          src="${recipe.image}" 
-          alt="${recipe.name}" 
+        <img
+          src="${recipe.image}"
+          alt="${recipe.name}"
           class="recipe-banner-img"
           onerror="this.src='https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80'"
         />
@@ -1564,7 +1603,7 @@ function displayRecipe(recipe) {
           <div>
             <div class="recipe-top-meta">
               <span class="cuisine-badge">${recipe.cuisine} Cuisine</span>
-              <button type="button" id="close-recipe-btn" class="close-detail-btn">Close Recipe &times;</button>
+              <button type="button" id="close-recipe-btn" class="close-detail-btn">Close &times;</button>
             </div>
             <h3>${recipe.name}</h3>
             <p>${recipe.description}</p>
@@ -1656,7 +1695,13 @@ function handleReviewSubmit() {
   }
 }
 
+// ==================== GLOBAL EVENT LISTENERS ====================
 document.addEventListener("click", e => {
+  if (e.target.closest("#theme-toggle-btn") || e.target.closest("#theme-toggle-mobile")) {
+    toggleTheme();
+    return;
+  }
+
   if (e.target.closest("#logo-link")) {
     e.preventDefault();
     navigateTo("home");

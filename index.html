@@ -31,15 +31,20 @@
         </div>
       </a>
 
-      <nav class="desktop-nav">
+      <nav class="desktop-nav" aria-label="Primary Navigation">
         <button type="button" id="nav-home" data-nav="home" onclick="openPage('home')" class="nav-btn active">Home & Mission</button>
         <button type="button" id="nav-about" data-nav="about" onclick="openPage('about')" class="nav-btn">About Us</button>
         <button type="button" id="nav-reviews" data-nav="reviews" onclick="openPage('reviews')" class="nav-btn">Reviews & Ratings</button>
-        <button type="button" id="nav-finder" data-nav="finder" onclick="openPage('finder')" class="btn-primary btn-sm">Ingredient & Recipe Finder</button>
+        <button type="button" id="nav-finder" data-nav="finder" onclick="openPage('finder')" class="btn-primary btn-sm">Recipe Finder</button>
+        <button type="button" id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Switch between Light and Dark theme" title="Toggle Light / Dark Theme">
+          <span id="theme-icon">🌙</span>
+          <span id="theme-label">Dark</span>
+        </button>
       </nav>
 
       <div class="mobile-nav">
-        <button type="button" data-nav="finder" onclick="openPage('finder')" class="btn-primary btn-xs">Find Recipes</button>
+        <button type="button" id="theme-toggle-mobile" class="theme-toggle-btn btn-xs" aria-label="Toggle theme">🌙</button>
+        <button type="button" data-nav="finder" onclick="openPage('finder')" class="btn-primary btn-xs">Recipes</button>
       </div>
     </div>
 
@@ -64,7 +69,7 @@
               Cooking made effortless, <span class="text-accent italic">one ingredient</span> at a time.
             </h1>
             <p class="hero-description">
-              WhitCooks was built to eliminate guesswork in the kitchen. Explore 53 authentic African, Chinese, International, Italian, Indian, and Japanese recipes with clear ingredient checklists and exact preparation steps.
+              WhitCooks eliminates guesswork in the kitchen. Explore 53 authentic African, Chinese, International, Italian, Indian, and Japanese recipes with interactive ingredient checklists, clear steps, and Light & Dark viewing themes.
             </p>
             <div class="hero-actions">
               <button type="button" data-nav="finder" onclick="openPage('finder')" class="btn-primary btn-lg">
@@ -73,7 +78,7 @@
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </button>
-              <button type="button" data-nav="reviews" onclick="openPage('reviews')" class="btn-outline btn-lg">Rate & Review Us</button>
+              <button type="button" data-nav="reviews" onclick="openPage('reviews')" class="btn-outline btn-lg">Read & Post Reviews (5)</button>
             </div>
           </div>
 
@@ -98,15 +103,15 @@
                 <div class="feature-step-item">
                   <div class="step-num">02</div>
                   <div>
-                    <h4>Instant Ingredient Checklists</h4>
-                    <p>Exact measurements and interactive checkboxes so you can track every item as you prep.</p>
+                    <h4>Interactive Ingredient Checklists</h4>
+                    <p>Tick off each ingredient as you gather and measure it on your kitchen counter.</p>
                   </div>
                 </div>
                 <div class="feature-step-item">
                   <div class="step-num">03</div>
                   <div>
-                    <h4>Distraction-Free Instructions</h4>
-                    <p>Step-by-step cooking directions presented clearly without popups or lengthy life stories.</p>
+                    <h4>Light & Dark Comfort Themes</h4>
+                    <p>Switch seamlessly between sunlit cream and warm midnight dark mode while cooking.</p>
                   </div>
                 </div>
               </div>
@@ -203,8 +208,8 @@
                 <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
               </svg>
             </div>
-            <h3>Global Culinary Reach</h3>
-            <p>Curated dishes celebrating flavors from six major culinary regions worldwide.</p>
+            <h3>Distraction-Free Layout</h3>
+            <p>Clean, structured recipes with prep times, serving yields, and step-by-step directions.</p>
           </div>
         </div>
       </div>
@@ -216,7 +221,7 @@
         <div class="section-center-header">
           <span class="eyebrow-text">Our Story</span>
           <h2>About WhitCooks</h2>
-          <p>Why we created a calmer, faster, and more reliable home cooking resource.</p>
+          <p>Why we created a calmer, faster, and cleaner home cooking resource.</p>
         </div>
 
         <div class="about-card">
@@ -231,11 +236,11 @@
           <div class="about-subgrid">
             <div class="about-box">
               <h4>Who It Is For</h4>
-              <p>Busy students, home cooks exploring new international flavors, and anyone who appreciates clean, structured recipes.</p>
+              <p>Busy students, home cooks exploring new cuisines, and anyone who appreciates clean, structured recipes.</p>
             </div>
             <div class="about-box">
               <h4>Our Design Standard</h4>
-              <p>Every dish includes photography, prep and cook times, serving counts, and an interactive ingredient checklist.</p>
+              <p>Every dish includes dish-accurate photography, prep and cook times, serving counts, and interactive checklists.</p>
             </div>
           </div>
 
@@ -268,6 +273,7 @@
               <input
                 type="text"
                 id="food-search-input"
+                aria-label="Search dish or ingredient"
                 placeholder="Search dish or ingredient (e.g., Jollof Rice, Pilau, Ramen, Butter Chicken)..."
               />
             </div>
@@ -286,7 +292,7 @@
           </div>
         </div>
 
-        <div id="recipe-result-container" class="hidden"></div>
+        <div id="recipe-result-container" class="hidden" aria-live="polite"></div>
 
         <div class="catalog-section">
           <div class="catalog-header">
@@ -298,13 +304,13 @@
       </div>
     </section>
 
-    <!-- 4. CUSTOMER RATINGS & COMMENTS SECTION -->
+    <!-- 4. CUSTOMER RATINGS & REVIEWS SECTION -->
     <section id="section-reviews" class="page-section hidden fade-in">
       <div class="container">
         <div class="section-center-header">
           <span class="eyebrow-text">Community Feedback</span>
-          <h2>Rate WhitCooks & Leave a Comment</h2>
-          <p>Share your cooking experience, rate our recipes, and let us know what dish you tried.</p>
+          <h2>Customer Ratings & Reviews</h2>
+          <p>Read feedback from fellow home cooks or leave your own star rating and review below.</p>
         </div>
 
         <div class="reviews-layout">
@@ -360,8 +366,8 @@
                 <textarea id="reviewer-comment" rows="4" placeholder="Tell us what you enjoyed about the ingredients or cooking steps..." required></textarea>
               </div>
 
-              <p id="review-form-error" class="form-error hidden">Please enter both your name and a comment before submitting.</p>
-              <p id="review-form-success" class="form-success hidden">Thank you! Your rating and comment have been posted.</p>
+              <p id="review-form-error" class="form-error hidden" role="alert">Please enter both your name and a comment before submitting.</p>
+              <p id="review-form-success" class="form-success hidden" role="status">Thank you! Your rating and comment have been posted.</p>
 
               <button type="submit" id="submit-review-btn" class="btn-primary btn-full">Post Review</button>
             </form>
@@ -372,12 +378,12 @@
               <div>
                 <span class="micro-label">Overall Satisfaction</span>
                 <div class="avg-score-row">
-                  <strong id="average-rating-value">4.7</strong>
+                  <strong id="average-rating-value">4.8</strong>
                   <span>/ 5.0</span>
                 </div>
               </div>
               <div class="review-count-pill">
-                <span id="total-reviews-count">3 Verified Reviews</span>
+                <span id="total-reviews-count">5 Verified Reviews</span>
               </div>
             </div>
 
